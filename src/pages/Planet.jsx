@@ -11,7 +11,16 @@ const Planet = ({ planetName }) => {
 			{tabActive === 2 && (
 				<img src={PLANETS_INFO[planetName].planetImg[3]} alt='' />
 			)}
+
 			<Tabs setTabActive={value => changeTabActive(value, setTabActive)}></Tabs>
+			<div>
+				<div>PLANET ROTATION: {PLANETS_INFO[planetName].planetRotation}</div>
+				<div>
+					PLANET REVOLUTION: {PLANETS_INFO[planetName].planetRevolution}
+				</div>
+				<div>PLANET RADIUS: {PLANETS_INFO[planetName].planetRadius}</div>
+				<div>PLANET AVERAGE: {PLANETS_INFO[planetName].planetAverage}</div>
+			</div>
 		</>
 	);
 };
