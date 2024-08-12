@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Tabs from '../components/tabs/Tabs';
 import { PLANETS_INFO } from '../constants/planetsinfo';
+import { StledImgContainer } from './syles';
 
 const Planet = ({ planetName }) => {
 	const [tabActive, setTabActive] = useState(0);
